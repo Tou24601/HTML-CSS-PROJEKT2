@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+ nav {
+    width: 100vw;
+    height: 50px;
+    background-color: #4E4E4E;
+ }
+ nav .nav {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a:link {
+    text-decoration: none;
+    color: #F1F1F1;
+}
+a:visited {
+    color: #F1F1F1;
+}
+nav .container .leftNav {
+    font-weight: 700; 
+}
+nav .container .rightNav {
+    list-style-type: none;
+}
+nav .container .rightNav li {
+    display: inline;
+    margin-left: 20px;
+}
+nav .container .rightNav #contact {
+    cursor: not-allowed;
+}
+#firstSection {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    background-color: #F1F1F1;
+    background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
+    background-size: cover;
+}
+#firstSection .shadow {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#firstSection .firstSectionElements {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+#firstSection .container .mainTop {
+    width: 577px;
+    font-size: 36px;
+    font-weight: 700;
+}
+#firstSection .container .linkButton {
+    width: 164px; 
+    padding: 10px;
+    line-height: 20px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 1s;
+}
+#firstSection .container .linkButton:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+#aboutSection {
+    width: 100vw;
+    background-color: #F1F1F1;
+}
+#aboutSection .container .specialistTop {
+    font-size: 36px;
+    color: #152D41;
+    padding: 104px 0px;
+    font-weight: 700;
+}
+#aboutSection .container .specialist {
+    color: #000000;
+    padding-bottom: 104px;
+}
+#aboutSection .container .specialist .specialistText {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#aboutSection .container .specialist .specialistText .specialistName {
+    font-weight: 700;
+}
+#aboutSection .container .specialist .photo {
+    width: 197px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+#aboutSection .container .specialist:nth-of-type(odd) {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+#aboutSection .container .specialist:nth-of-type(even) {
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 44px;
+}
+#aboutSection .container #specialistFirst {
+    background-image: url(pexels-andrea-piacquadio-3769021.jpg);
+}
+#aboutSection .container #specialistSecond {
+    background-image: url(pexels-edmond-dantès-4347368.jpg);
+}
+#offerSection {
+    width: 100vw;
+    background-color: #405D78;
+}
+#offerSection .offerSectionElements {
+    padding: 104px 0px;
+}
+#offerSection .container .offerTop {
+    font-size: 36px;
+    padding-bottom: 104px;
+    font-weight: 700;
+}
+#offerSection .container .serviceBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 63px;
+    justify-content: center;
+}
+#offerSection .container .serviceBox .service {
+    width: 198px;
+    height: 193.78px;
+    background-color: #F1F1F1;
+    color: #000000;
+    box-shadow: 0px 15px 10px -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.5s;
+}
+#offerSection .container .serviceBox .service:hover {
+    transform: scale(1.05);
+}
+#offerSection .container .serviceBox .service .serviceName {
+    font-size: 24px;
+}
+#offerSection .container .serviceBox .firstService::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1 / 1;
+    background-color: #E07A64;
+}
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: #4E4E4E;
+}
+footer .footer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#footerText {
+    font-weight: 700; 
+}
+i {
+    font-size: 31px;
+    color: #FFFFFF;
+    margin-left: 18px;
+}
+@media screen and (min-width: 320px) {
+    #aboutSection .container .specialistTop {
+        padding: 34px 0px;
+        margin: 0 auto;
+    }
+    #aboutSection .container .specialist {
+        padding-bottom: 34px;
+    }
+    #aboutSection .container .specialist .specialistText {
+        margin: 0 auto;
+        width: 93vw;
+        gap: 10px;
+    }
+    /*#aboutSection .container .specialist:nth-of-type(odd) {
+        display: flex;
+        flex-direction: row;
+        gap: 44px;
+    }
+    #aboutSection .container .specialist:nth-of-type(even) {
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 44px;
+    }*/
+}
+@media screen and (min-width: 576px) {
+    
+    
+}
+@media screen and (min-width: 768px) {
+    
+    
+}
+@media screen and (min-width: 992px) {
+    
+    
+}
+@media screen and (min-width: 1200px) {
+    
+    
+}
