@@ -207,15 +207,15 @@ i {
         width: 93vw;
         gap: 10px;
     }
-    /*#aboutSection .container .specialist:nth-of-type(odd) {
+    #aboutSection .container .specialist:nth-of-type(odd) {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 44px;
     }
     #aboutSection .container .specialist:nth-of-type(even) {
         text-align: right;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
         gap: 44px;
     }*/
 }
