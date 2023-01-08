@@ -1,10 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-.container {
-    width: 960px;
-    margin: 0 auto;
-}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -14,6 +10,7 @@ body {
     width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
+    padding: 0px 14px;
  }
  nav .nav {
     height: 50px;
@@ -33,14 +30,7 @@ nav .container .leftNav {
     font-weight: 700; 
 }
 nav .container .rightNav {
-    list-style-type: none;
-}
-nav .container .rightNav li {
-    display: inline;
-    margin-left: 20px;
-}
-nav .container .rightNav #contact {
-    cursor: not-allowed;
+    display: none;
 }
 #firstSection {
     height: calc(100vh - 50px);
@@ -58,11 +48,12 @@ nav .container .rightNav #contact {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 43px;
     justify-content: center;
+    padding: 0px 14px;
 }
 #firstSection .container .mainTop {
-    width: 577px;
+    line-height: 40px;
     font-size: 36px;
     font-weight: 700;
 }
@@ -73,34 +64,24 @@ nav .container .rightNav #contact {
     border: 3px solid #FFFFFF;
     background-color: transparent;
     text-align: center;
-    transition-duration: 1s;
-}
-#firstSection .container .linkButton:hover {
-    background-color: #FFFFFF;
-    color: black;
 }
 #aboutSection {
     width: 100vw;
     background-color: #F1F1F1;
 }
 #aboutSection .container .specialistTop {
+    text-align: center;
     font-size: 36px;
     color: #152D41;
-    padding: 104px 0px;
+    padding: 34px 0px;
     font-weight: 700;
 }
 #aboutSection .container .specialist {
     color: #000000;
-    padding-bottom: 104px;
-}
-#aboutSection .container .specialist .specialistText {
-    width: 50vw;
+    padding-bottom: 54px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-#aboutSection .container .specialist .specialistText .specialistName {
-    font-weight: 700;
+    align-items: center;
 }
 #aboutSection .container .specialist .photo {
     width: 197px;
@@ -108,17 +89,7 @@ nav .container .rightNav #contact {
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-}
-#aboutSection .container .specialist:nth-of-type(odd) {
-    display: flex;
-    flex-direction: row;
-    gap: 44px;
-}
-#aboutSection .container .specialist:nth-of-type(even) {
-    text-align: right;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 44px;
+    margin-bottom: 34px;
 }
 #aboutSection .container #specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
@@ -126,28 +97,39 @@ nav .container .rightNav #contact {
 #aboutSection .container #specialistSecond {
     background-image: url(pexels-edmond-dantès-4347368.jpg);
 }
+#aboutSection .container .specialist .specialistText {
+    width: calc(100vw - 28px);
+    padding: 14px 0px;
+    text-align: justify;
+}
+#aboutSection .container .specialist .specialistText .specialistName {
+    font-weight: 700;
+    padding-bottom: 34px;
+}
 #offerSection {
     width: 100vw;
     background-color: #405D78;
 }
 #offerSection .offerSectionElements {
-    padding: 104px 0px;
+    padding: 14px 0px;
 }
 #offerSection .container .offerTop {
-    font-size: 36px;
-    padding-bottom: 104px;
+    font-size: 26px;
+    padding: 76px 0px 60px 0px;
     font-weight: 700;
+    text-align: center;
 }
 #offerSection .container .serviceBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 63px;
+    gap: 34px;
     justify-content: center;
+    padding-bottom: 45px;
 }
 #offerSection .container .serviceBox .service {
-    width: 198px;
-    height: 193.78px;
+    width: 338.88px;
+    height: 331.66px;
     background-color: #F1F1F1;
     color: #000000;
     box-shadow: 0px 15px 10px -15px;
@@ -156,10 +138,6 @@ nav .container .rightNav #contact {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition-duration: 0.5s;
-}
-#offerSection .container .serviceBox .service:hover {
-    transform: scale(1.05);
 }
 #offerSection .container .serviceBox .service .serviceName {
     font-size: 24px;
@@ -176,62 +154,26 @@ nav .container .rightNav #contact {
 }
 footer {
     width: 100vw;
-    height: 50px;
+    height: 147px;
     background-color: #4E4E4E;
 }
 footer .footer {
-    height: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
+    padding: 40px 0px;
 }
 #footerText {
-    font-weight: 700; 
+    font-weight: 700;
+    text-align: justify; 
+    line-height: 21px;
 }
 i {
     font-size: 31px;
     color: #FFFFFF;
     margin-left: 18px;
 }
-@media screen and (min-width: 320px) {
-    #aboutSection .container .specialistTop {
-        padding: 34px 0px;
-        margin: 0 auto;
-    }
-    #aboutSection .container .specialist {
-        padding-bottom: 34px;
-    }
-    #aboutSection .container .specialist .specialistText {
-        margin: 0 auto;
-        width: 93vw;
-        gap: 10px;
-    }
-    #aboutSection .container .specialist:nth-of-type(odd) {
-        display: flex;
-        flex-direction: column;
-        gap: 44px;
-    }
-    #aboutSection .container .specialist:nth-of-type(even) {
-        text-align: right;
-        display: flex;
-        flex-direction: column;
-        gap: 44px;
-    }*/
-}
 @media screen and (min-width: 576px) {
-    
-    
-}
-@media screen and (min-width: 768px) {
-    
-    
-}
-@media screen and (min-width: 992px) {
-    
-    
-}
-@media screen and (min-width: 1200px) {
-    
     
 }
