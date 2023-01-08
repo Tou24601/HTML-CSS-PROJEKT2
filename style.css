@@ -10,7 +10,6 @@ body {
     width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
-    padding: 0px 14px;
  }
  nav .nav {
     height: 50px;
@@ -28,6 +27,7 @@ a:visited {
 }
 nav .container .leftNav {
     font-weight: 700; 
+    padding: 0px 14px;
 }
 nav .container .rightNav {
     display: none;
@@ -99,7 +99,7 @@ nav .container .rightNav {
 }
 #aboutSection .container .specialist .specialistText {
     width: calc(100vw - 28px);
-    padding: 14px 0px;
+    padding: 0px 14px;
     text-align: justify;
 }
 #aboutSection .container .specialist .specialistText .specialistName {
@@ -151,7 +151,6 @@ nav .container .rightNav {
 }
 footer {
     width: 100vw;
-    height: 147px;
     background-color: #4E4E4E;
 }
 footer .footer {
@@ -159,25 +158,55 @@ footer .footer {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    padding: 40px 0px;
+    padding: 40px 18px;
 }
 #footerText {
     font-weight: 700;
     text-align: justify; 
     line-height: 21px;
+  
 }
 i {
     font-size: 31px;
     color: #FFFFFF;
-    margin-left: 18px;
+
 }
 @media screen and (min-width: 576px) {
-
+    nav .container .leftNav {
+        padding: 0px 30px;
+    }
+     #firstSection .firstSectionElements {
+        padding: 0px 30px;
+     }
+#aboutSection .container .specialist .specialistText {
+    width: calc(100vw - 60px);
+    padding: 0px 30px;
+}
+    #offerSection .container .serviceBox {
+        gap: 50px;
+    }
     #offerSection .container .serviceBox .service {
         width: 198px;
         height: 193.78px;
     }
-    #offerSection .container .serviceBox .service:active {
-        transform: scale(1.05);
+    footer .footer {
+        padding: 34px 30px;
+    }
+}
+@media screen and (min-width: 768px) {
+    nav .container .leftNav { 
+        padding-left: 30px;
+    }
+    nav .container .rightNav {
+        display: initial;
+        list-style-type: none;
+        padding-right: 30px;
+    }
+    nav .container .rightNav li {
+        display: inline;
+        margin-left: 20px;
+    }
+    nav .container .rightNav #contact {
+        cursor: not-allowed;
     }
 }
