@@ -110,9 +110,6 @@ nav .container .rightNav {
     width: 100vw;
     background-color: #405D78;
 }
-#offerSection .offerSectionElements {
-    padding: 14px 0px;
-}
 #offerSection .container .offerTop {
     font-size: 26px;
     padding: 76px 0px 60px 0px;
@@ -175,5 +172,12 @@ i {
     margin-left: 18px;
 }
 @media screen and (min-width: 576px) {
-    
+
+    #offerSection .container .serviceBox .service {
+        width: 198px;
+        height: 193.78px;
+    }
+    #offerSection .container .serviceBox .service:active {
+        transform: scale(1.05);
+    }
 }
