@@ -6,6 +6,10 @@ body {
     font-size: 18px;
     color: #FFFFFF;
 }
+.container {
+    width: 94vw;
+    margin: 0 auto;
+}
  nav {
     width: 100vw;
     height: 50px;
@@ -27,7 +31,6 @@ a:visited {
 }
 nav .container .leftNav {
     font-weight: 700; 
-    padding: 0px 14px;
 }
 nav .container .rightNav {
     display: none;
@@ -50,7 +53,6 @@ nav .container .rightNav {
     flex-direction: column;
     gap: 43px;
     justify-content: center;
-    padding: 0px 14px;
 }
 #firstSection .container .mainTop {
     line-height: 40px;
@@ -89,7 +91,7 @@ nav .container .rightNav {
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
 }
 #aboutSection .container #specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
@@ -98,8 +100,6 @@ nav .container .rightNav {
     background-image: url(pexels-edmond-dantès-4347368.jpg);
 }
 #aboutSection .container .specialist .specialistText {
-    width: calc(100vw - 28px);
-    padding: 0px 14px;
     text-align: justify;
 }
 #aboutSection .container .specialist .specialistText .specialistName {
@@ -158,30 +158,19 @@ footer .footer {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    padding: 40px 18px;
+    padding: 40px 0px;
 }
 #footerText {
     font-weight: 700;
     text-align: justify; 
     line-height: 21px;
-  
 }
 i {
     font-size: 31px;
     color: #FFFFFF;
-
+    margin-left: 18px;
 }
 @media screen and (min-width: 576px) {
-    nav .container .leftNav {
-        padding: 0px 30px;
-    }
-     #firstSection .firstSectionElements {
-        padding: 0px 30px;
-     }
-#aboutSection .container .specialist .specialistText {
-    width: calc(100vw - 60px);
-    padding: 0px 30px;
-}
     #offerSection .container .serviceBox {
         gap: 50px;
     }
@@ -189,24 +178,91 @@ i {
         width: 198px;
         height: 193.78px;
     }
-    footer .footer {
-        padding: 34px 30px;
-    }
 }
 @media screen and (min-width: 768px) {
-    nav .container .leftNav { 
-        padding-left: 30px;
-    }
     nav .container .rightNav {
         display: initial;
         list-style-type: none;
-        padding-right: 30px;
     }
     nav .container .rightNav li {
         display: inline;
         margin-left: 20px;
     }
+    #aboutSection .container .specialistTop {
+        padding: 100px 0px;
+    }
+    #aboutSection .container .specialist {
+        padding-bottom: 100px;
+    }
+    #offerSection .container .offerTop {
+        padding: 100px 0px 100px 0px;
+    }
+    #offerSection .container .serviceBox {
+        padding-bottom: 100px;
+    }
+    footer {
+        height: 50px;
+    }
+    footer .footer {
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
     nav .container .rightNav #contact {
         cursor: not-allowed;
+    }
+    #firstSection .container .mainTop {
+        width: 577px;
+    }
+    #firstSection .container .linkButton {
+        transition-duration: 1s;
+    }
+    #firstSection .container .linkButton:hover {
+        background-color: #FFFFFF;
+        color: black;
+    }
+    #aboutSection .container .specialistTop {
+        text-align: left;
+    }
+    #aboutSection .container .specialist .photo {
+        margin-bottom: 0px;
+    }
+    #aboutSection .container .specialist .specialistText {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #aboutSection .container .specialist:nth-of-type(odd) {
+        display: flex;
+        flex-direction: row;
+        gap: 44px;
+    }
+    #aboutSection .container .specialist:nth-of-type(even) {
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 44px;
+    }
+    #offerSection .container .offerTop {
+        text-align: left;
+        font-size: 36px;
+    }
+    #offerSection .container .serviceBox {
+        gap: 63px;
+    }
+    #offerSection .container .serviceBox .service {
+        transition-duration: 0.5s;
+    }
+    #offerSection .container .serviceBox .service:hover {
+        transform: scale(1.05);
     }
 }
