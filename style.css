@@ -75,7 +75,7 @@ nav .container .rightNav {
     text-align: center;
     font-size: 36px;
     color: #152D41;
-    padding: 34px 0px;
+    padding: 34px 50px;
     font-weight: 700;
 }
 #aboutSection .container .specialist {
@@ -91,7 +91,7 @@ nav .container .rightNav {
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 10px;
+    margin-bottom: 42px;
 }
 #aboutSection .container #specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
@@ -112,7 +112,7 @@ nav .container .rightNav {
 }
 #offerSection .container .offerTop {
     font-size: 26px;
-    padding: 76px 0px 60px 0px;
+    padding: 76px 0px 59.4px 0px;
     font-weight: 700;
     text-align: center;
 }
@@ -120,9 +120,9 @@ nav .container .rightNav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 34px;
+    gap: 35.94px;
     justify-content: center;
-    padding-bottom: 45px;
+    padding-bottom: 45.19px;
 }
 #offerSection .container .serviceBox .service {
     width: 338.88px;
@@ -158,7 +158,7 @@ footer .footer {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    padding: 40px 0px;
+    padding: 38px 0px 42px 0px;
 }
 #footerText {
     font-weight: 700;
@@ -172,7 +172,7 @@ i {
 }
 @media screen and (min-width: 576px) {
     #offerSection .container .serviceBox {
-        gap: 50px;
+        gap: 63px;
     }
     #offerSection .container .serviceBox .service {
         width: 198px;
@@ -189,16 +189,16 @@ i {
         margin-left: 20px;
     }
     #aboutSection .container .specialistTop {
-        padding: 100px 0px;
+        padding: 104px 0px;
     }
     #aboutSection .container .specialist {
-        padding-bottom: 100px;
+        padding-bottom: 104px;
     }
     #offerSection .container .offerTop {
-        padding: 100px 0px 100px 0px;
+        padding: 104px 0px;
     }
     #offerSection .container .serviceBox {
-        padding-bottom: 100px;
+        padding-bottom: 104px;
     }
     footer {
         height: 50px;
@@ -255,9 +255,6 @@ i {
     #offerSection .container .offerTop {
         text-align: left;
         font-size: 36px;
-    }
-    #offerSection .container .serviceBox {
-        gap: 63px;
     }
     #offerSection .container .serviceBox .service {
         transition-duration: 0.5s;
