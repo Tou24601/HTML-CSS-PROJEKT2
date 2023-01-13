@@ -75,7 +75,7 @@ nav .container .rightNav {
     text-align: center;
     font-size: 36px;
     color: #152D41;
-    padding: 34px 50px;
+    padding: 34px 50px 50.5px 50px;
     font-weight: 700;
 }
 #aboutSection .container .specialist {
@@ -104,7 +104,7 @@ nav .container .rightNav {
 }
 #aboutSection .container .specialist .specialistText .specialistName {
     font-weight: 700;
-    padding-bottom: 34px;
+    padding-bottom: 21.09px;
 }
 #offerSection {
     width: 100vw;
