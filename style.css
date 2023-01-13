@@ -240,11 +240,16 @@ i {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        text-align: unset;
+    }
+    #aboutSection .container .specialist .specialistText .specialistName {
+        padding-bottom: 0px;
     }
     #aboutSection .container .specialist:nth-of-type(odd) {
         display: flex;
         flex-direction: row;
         gap: 44px;
+        text-align: left;
     }
     #aboutSection .container .specialist:nth-of-type(even) {
         text-align: right;
